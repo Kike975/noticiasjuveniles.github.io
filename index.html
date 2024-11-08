@@ -1,0 +1,274 @@
+<HTML>
+	<HEAD>
+		<TITLE>Servidor</TITLE>
+		
+		<META http-equiv="Content-Type" content="text/html"; charset="UTF-8"/>
+		
+		<STYLE>
+			body {			
+				background-color:black;
+				}
+
+/*Imagen de fondo*/
+			#cajaimagendefondo {
+				position:absolute;
+				margin:auto;
+				z-index:-1;
+				top:90px;
+				}
+			#imagendefondo {
+				z-index:-1;
+				background-repeat:no-repeat;
+				width:800px;
+				height:*;
+				}
+
+/*Fin de imagen de fondo*/				
+
+/*Comienza el menu superior*/
+			#cajamenusuperior {
+				position:absolute;
+				width:100%;
+				height:80px;
+				background-image:url(./images/fondosup.jpg);
+				background-repeat:repeat-x;
+				background-color:#0d1e42;
+				text-align:center;
+				left:0;
+				right:0;
+				top:0;
+				bottom:0;
+				}
+			#menusuperior { /*Es una caja donde va dentro los 3 div de contenidos: titulo, menu y logo*/
+				position:relative;
+				text-align:center;
+				vertical-align:middle;
+				margin:0 auto;
+				width:1010px;
+				height:80px;
+				top:0px;
+				z-index:10;
+				}
+			#titulo {
+				float:left;
+				}
+			#menu {
+				float:left;
+				vertical-align:middle;
+				}
+			#findemenu {
+				position:relative;
+				float:right;
+				}
+			#listamenu {
+				display:table-cell;
+				color:black;
+				vertical-align:middle;
+				top:40px;
+				padding:30px;
+				}
+			.limenu {
+				color:black;
+				display:inline;
+				margin:1px;
+				color:#3B5998;
+				font-size:20px;
+				list-style:none;				
+				}
+			.linkmenu {
+				color:black;
+				text-decoration:none;
+				font-weight:bold;
+				}
+			.linkmenu:hover {
+				color:orange;
+				}
+			.linkmenu:link {
+				color:#0d1e42;
+				}
+/* Termina el menu superior*/
+
+			#cajageneral {
+				position:relative;
+				margin:auto;
+				text-align:center;
+				width:1000px;
+				}
+
+/*Comienza el menu de la IZQ*/
+			#cajamenuizq{
+				position:relative;
+				top:80px;
+				width:220px;
+				height:640px;
+				text-align:center;
+				float:left;
+				}
+			#menuizq {
+				padding-top:5px;
+				position:relative;
+				border:5px solid #3B5998;
+				opacity:0.6;
+				width:200px;
+				height:600px;
+				overflow:scroll;
+				background-color:#061430;
+				text-align:left;
+				border-radius:50px;
+				}
+			.liizquierdo {
+				margin:0px;
+				margin-left:-30px;
+				color:#3B5998;
+				font-size:20px;
+				list-style:none;
+				text-decoration:none;
+				}
+			.linkizquierdo {
+				text-decoration:none;
+				}
+			LI .linkizquierdo:link {
+				color:white;
+				}
+			LI .linkizquierdo:visited {
+				color:white;
+				}
+			LI .linkizquierdo:hover {
+				color:white
+				}
+/*Termina el menu de la izq*/
+
+/*Contenido*/
+			#contenido {
+				position:relative;
+				border:5px solid #3B5998;
+				float:left;
+				top:80px;
+				min-width:720px;
+				background-color:white;
+				opacity:0.6;
+				border-radius:15px;
+				}
+			.entrada {
+				position:relative;
+				text-align:justify;
+				margin:7px;
+				}
+			.entrada > H1 > A {
+				text-decoration:none;
+				}
+			.entrada > H1 > B {
+				text-decoration:none;
+				}
+#imagendefondo {
+				z-index:-1;
+				background-repeat:no-repeat;
+				width:800px;
+				height:*;
+				}
+/*Fin de contenido*/		
+
+				
+/*Estilos Generales*/
+			
+			H1 {
+				color:#083ebd;
+				font-size:26px;
+				text-align:left;
+				}
+			H1 A:active {
+				color:#083ebd;
+				}
+			H1 A:visited {
+				color:#083ebd;
+				}
+			H1 A:hover {
+				color:green;
+				}
+			H1 A:link {
+				color:#083ebd;
+				}
+			
+			H3 {
+				color:#094a5c;
+				font-size:30px;
+				text-align:center;
+				vertical-align:middle;
+				margin:1px;
+				}
+			A	{
+				}
+				
+
+		</STYLE>
+	</HEAD>
+
+	<BODY>
+<!--Imagen de fondo-->
+		<DIV id="cajaimagendefondo">
+			<IMG id="imagendefondo" src="./images/logotipo.png"/>
+		</DIV>
+<!--Fin de imagen de fondo-->
+		
+		<DIV id="cajamenusuperior">
+			<DIV id="menusuperior">
+				<DIV id="titulo">
+					<H3>Noticias</H3>
+					<H3>Juveniles</H3>
+				</DIV>
+				
+				<DIV id="menu">
+					<UL id="listamenu">
+						<LI class="limenu"><A class="linkmenu" href="#">Locales</A></LI>
+						<LI class="limenu"><A class="linkmenu" href="#">Provinciales</A></LI>
+						<LI class="limenu"><A class="linkmenu" href="#">Universitarias</A></LI>
+						<LI class="limenu"><A class="linkmenu" href="#">Tienda virtual</A></LI>
+						<LI class="limenu"><A class="linkmenu" href="#">Contactanos</A></LI>
+					</UL>
+				</DIV>
+				
+				<DIV id="findemenu">
+					<IMG src="./images/logotipo2.png">
+				</DIV>
+				
+			</DIV>
+		</DIV>
+		
+		<DIV id="cajageneral"><!--Caja general-->
+		
+			<DIV id="cajamenuizq">
+				<DIV id="menuizq">
+					<UL>
+					<LI class="liizquierdo"><A class="linkizquierdo" href="#">Editorial</A></L1>
+					<LI class="liizquierdo"><A class="linkizquierdo" href="#">Opinion</A></L1>
+					<LI class="liizquierdo"><A class="linkizquierdo" href="#">Farandula</A></L1>
+					<LI class="liizquierdo"><A class="linkizquierdo" href="#">Deportes</A></L1>
+					<UL>
+				</DIV>
+			</DIV>
+		
+			<DIV id="contenido">
+			
+				<DIV class="entrada">
+		<H1><A href="#">¿Cuándo se acabarán los apagones en Ecuador que ya son de 14 horas al día? </A></H1>
+					</DIV>
+				<DIV class="entrada">
+					<H1><A href="#">El presidente Daniel Noboa habla de la situación</A></H1>
+					<P>Ecuador enfrenta una crisis energética por un déficit de 1.000 megavatios, causado por la sequía que afecta a sus hidroeléctricas, que proveen el 70% de la energía del país. Según el presidente Noboa, el problema debería estar resuelto en diciembre, gracias a medidas como la importación de turbinas desde Estados Unidos y Perú. Noboa también espera que Colombia venda energía a Ecuador y, como muestra de reciprocidad, asistirá a la COP16, mientras que espera la visita de Petro en la Cumbre Iberoamericana en Cuenca.</P>
+		
+				<IMG id="imagendefondo" src="./images/Imagen1.png"/>
+
+Ecuador enfrenta una crisis energética por un déficit de 1.000 megavatios, causado por la sequía que afecta a sus hidroeléctricas, que proveen el 70% de la energía del país. Según el presidente Noboa, el problema debería estar resuelto en diciembre, gracias a medidas como la importación de turbinas desde Estados Unidos y Perú. Noboa también espera que Colombia venda energía a Ecuador y, como muestra de reciprocidad, asistirá a la COP16, mientras que espera la visita de Petro en la Cumbre Iberoamericana en Cuenca.
+
+				<IMG id="imagendefondo" src="./images/Imagen2.png"/>
+
+La crisis también se debe a años de falta de inversión en el sector eléctrico, controlado por el Estado. En respuesta, la Asamblea aprobó una ley que impulsa la inversión privada en energías renovables, con proyectos de hasta 100 megavatios, un avance significativo frente a los diez permitidos actualmente.
+Noboa, quien busca la reelección en 2025, admite que los apagones afectan su imagen, pero confía en recuperar la confianza ciudadana con acciones que, promete, estabilizarán el suministro energético a principios de diciembre, devolviendo la normalidad a las familias.
+
+<H1><A href="#">Autor: Diego Rivera</A></H1>
+
+				</DIV>
+			</DIV>
+		</DIV> <!--Fin de caja general-->
+	</BODY>
+</HTML>
